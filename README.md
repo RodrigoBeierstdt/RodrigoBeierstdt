@@ -1,13 +1,12 @@
 <h1 align="center">Olá 👋, me chamo Rodrigo</h1>
 <h3 align="center">
-Estudante de Engenharia de Software focado em desenvolvimento back-end
+Estudante de Engenharia de Software
 </h3>
 
 - 🎓 Estudante de **Engenharia de Software - PUCPR**
 - 👨‍💻 Projetos disponíveis no meu [portfólio](https://rodrigobeierstdt.github.io/portfolio/)
 - 📫 Email: **rodrigobeierstdtcosta@gmail.com**
 - 💼 Experiência: Automação de processos de RH na **Construtora Parati LTDA**
-- ♟️ Interesses: xadrez e jogos que exigem raciocínio lógico
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=rodrigobeierstdt&show_icons=true&theme=great-gatsby" />
