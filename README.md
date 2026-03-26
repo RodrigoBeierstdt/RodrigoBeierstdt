@@ -1,4 +1,4 @@
-<h1 align="center">Olá 👋, me chamo Rodrigo</h1>
+<h1 align="center">Oi, me chamo Rodrigo</h1>
 <h3 align="center">
 Estudante de Engenharia de Software
 </h3>
