@@ -6,7 +6,7 @@ Estudante de Engenharia de Software
 - 🎓 Estudante de **Engenharia de Software - PUCPR**
 - 👨‍💻 Projetos disponíveis no meu [portfólio](https://rodrigobeierstdt.github.io/portfolio/)
 - 📫 Email: **rodrigobeierstdtcosta@gmail.com**
-- 💼 Experiência: Automação de processos usando programação na área de finanças na **Construtora Parati LTDA**
+- 💼 Experiência: Estagiário na área de banco de dados na **Construtora Parati LTDA**
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=rodrigobeierstdt&show_icons=true&theme=great-gatsby" />
