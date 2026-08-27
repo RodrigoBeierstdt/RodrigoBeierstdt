@@ -1,143 +1,22 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b1015">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0b1015">
 <title>Todoxy já pegou Challenger?</title>
-<meta name="description" content="Acompanhamento do rank de xyd#zzzzz no servidor BR.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-:root{--bg:#0b1015;--panel:#111820;--panel2:#151d26;--line:#26313d;--text:#f3f6f8;--muted:#8d9aa7;--blue:#5383e8;--red:#e84057;--gold:#d6b65f}
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-body{overflow-x:hidden;background:
-linear-gradient(90deg,rgba(11,16,21,.96),rgba(11,16,21,.82)),
-url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg') center 22%/cover fixed no-repeat}
-.app{min-height:100svh;display:flex;flex-direction:column}
-header{height:62px;background:rgba(17,24,32,.94);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;backdrop-filter:blur(12px);position:sticky;top:0;z-index:5}
-.header-inner{width:min(1040px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.02em}
-.mark{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#17374b,#54b8d6);position:relative;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
-.mark:after{content:"";position:absolute;width:15px;height:2px;background:white;left:9px;top:15px;transform:rotate(-38deg);box-shadow:0 0 8px rgba(255,255,255,.45)}
-.live{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted)}
-.live-dot{width:7px;height:7px;border-radius:50%;background:#33c77b;box-shadow:0 0 10px rgba(51,199,123,.55)}
-main{width:min(1040px,calc(100% - 28px));margin:0 auto;padding:40px 0 30px;flex:1}
-.profile{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:28px}
-.identity{display:flex;align-items:center;gap:14px}.avatar{width:58px;height:58px;border-radius:14px;background:url('https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Yasuo.png') center/cover;border:1px solid var(--line)}
-.name{font-size:23px;font-weight:800;letter-spacing:-.03em}.tag{font-size:14px;color:var(--muted);font-weight:600;margin-left:4px}.region{font-size:12px;color:var(--muted);margin-top:5px}
-button{border:1px solid #385ca8;background:#5383e8;color:white;font:inherit;font-size:13px;font-weight:700;padding:10px 14px;border-radius:7px;cursor:pointer}button:disabled{opacity:.65;cursor:wait}
-.question-card{background:rgba(17,24,32,.96);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:14px;box-shadow:0 18px 65px rgba(0,0,0,.25)}
-.question-head{padding:16px 18px;border-bottom:1px solid var(--line);font-size:13px;font-weight:700;color:#c7d0d9}
-.question-main{text-align:center;padding:50px 22px 48px;background:linear-gradient(180deg,rgba(21,29,38,.9),rgba(17,24,32,.98))}
-h1{font-size:clamp(28px,5vw,48px);margin:0;color:#dce3e9;letter-spacing:-.045em;font-weight:800}
-.answer{font-size:clamp(118px,27vw,270px);line-height:.86;font-weight:900;letter-spacing:-.07em;color:var(--red);margin:24px 0 8px;text-shadow:0 6px 30px rgba(0,0,0,.28)}
-.answer.yes{color:#38c981}.answer.error{font-size:clamp(64px,14vw,130px);color:#aeb9c4}
-.answer-sub{font-size:13px;color:var(--muted);min-height:20px}
-.grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px}
-.card{background:rgba(17,24,32,.96);border:1px solid var(--line);border-radius:10px;padding:18px;min-height:119px}
-.card-title{font-size:12px;font-weight:700;color:#98a6b3;margin-bottom:13px}.big{font-size:24px;font-weight:800;letter-spacing:-.035em}.gold{color:#e3c567}.small{font-size:12px;color:var(--muted);margin-top:7px;line-height:1.5}
-.status-row{display:flex;align-items:center;gap:8px}.status-pill{display:inline-flex;align-items:center;border-radius:5px;padding:4px 7px;font-size:11px;font-weight:800;background:rgba(232,64,87,.13);color:#ff7d90}.status-pill.yes{background:rgba(56,201,129,.13);color:#5ee0a0}
-.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px;padding:14px 4px 0;color:#73818e;font-size:11px}.meta a{color:#8fa8cd;text-decoration:none}.meta a:hover{text-decoration:underline}
-footer{text-align:center;padding:26px 16px 30px;color:#82909c;font-size:12px;letter-spacing:.01em}.heart{color:#c7d0d9}
-.loading{animation:pulse 1.1s ease-in-out infinite}@keyframes pulse{50%{opacity:.42}}
-@media(max-width:700px){main{padding-top:24px}.profile{align-items:flex-start}.avatar{width:50px;height:50px}.name{font-size:20px}.question-main{padding:40px 14px}.grid{grid-template-columns:1fr}.answer{font-size:clamp(110px,38vw,190px)}.header-inner{width:calc(100% - 22px)}}
-</style>
-</head>
-<body>
-<div class="app">
-<header>
-  <div class="header-inner">
-    <div class="brand"><span class="mark"></span><span>CHALLENGER CHECK</span></div>
-    <div class="live"><span class="live-dot"></span><span>dados públicos</span></div>
-  </div>
-</header>
-<main>
-  <section class="profile">
-    <div class="identity">
-      <div class="avatar"></div>
-      <div><div class="name">xyd<span class="tag">#zzzzz</span></div><div class="region">Brasil · Solo/Duo</div></div>
-    </div>
-    <button id="refresh">Atualizar</button>
-  </section>
-
-  <section class="question-card">
-    <div class="question-head">STATUS DO OBJETIVO</div>
-    <div class="question-main">
-      <h1>todoxy já pegou challenger?</h1>
-      <div class="answer loading" id="answer">...</div>
-      <div class="answer-sub" id="answerSub">consultando rank atual</div>
-    </div>
-  </section>
-
-  <section class="grid">
-    <div class="card">
-      <div class="card-title">RANK ATUAL</div>
-      <div class="big loading" id="rank">Consultando...</div>
-      <div class="small" id="wl">Solo/Duo · BR</div>
-    </div>
-    <div class="card">
-      <div class="card-title">PONTOS DE LIGA</div>
-      <div class="big gold loading" id="lp">—</div>
-      <div class="small">Atualização automática a cada 60 segundos.</div>
-    </div>
-    <div class="card">
-      <div class="card-title">CHALLENGER</div>
-      <div class="status-row"><div class="status-pill" id="statusPill">NÃO</div></div>
-      <div class="small" id="statusText">Aguardando dados.</div>
-    </div>
-  </section>
-
-  <div class="meta">
-    <span id="updated">Última consulta: —</span>
-    <span id="source"></span>
-  </div>
-</main>
-<footer><span class="heart">feito com amor e carinho byungchan</span></footer>
-</div>
+:root{--bg:#0b1015;--panel:#111820;--line:#293441;--text:#f4f6f8;--muted:#8d9aa7;--blue:#5383e8;--red:#e84057;--green:#34c985;--gold:#e0bd5e}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#0b1015;color:var(--text);font-family:Inter,system-ui,sans-serif}body{background:linear-gradient(90deg,rgba(11,16,21,.97),rgba(11,16,21,.82)),url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg') center 22%/cover fixed no-repeat}.app{min-height:100svh}header{height:62px;background:rgba(17,24,32,.95);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center}.bar,main{width:min(1040px,calc(100% - 28px));margin:auto}.bar{display:flex;justify-content:space-between;align-items:center;font-size:13px}.brand{font-weight:800}.live{color:var(--muted)}main{padding:42px 0 28px}.profile{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.identity{display:flex;align-items:center;gap:14px}.avatar{width:58px;height:58px;border-radius:13px;background:url('https://ddragon.leagueoflegends.com/cdn/15.16.1/img/champion/Yasuo.png') center/cover;border:1px solid var(--line)}.name{font-size:23px;font-weight:800}.tag,.region{color:var(--muted)}.tag{font-size:14px;margin-left:4px}.region{font-size:12px;margin-top:5px}button{border:1px solid #385ca8;background:var(--blue);color:white;font:inherit;font-size:13px;font-weight:700;padding:10px 14px;border-radius:7px;cursor:pointer}.question{background:rgba(17,24,32,.97);border:1px solid var(--line);border-radius:10px;overflow:hidden}.qhead{padding:16px 18px;border-bottom:1px solid var(--line);font-size:13px;font-weight:700;color:#c7d0d9}.qbody{text-align:center;padding:52px 20px 48px;background:linear-gradient(180deg,rgba(21,29,38,.91),rgba(17,24,32,.98))}h1{font-size:clamp(30px,5vw,48px);margin:0;font-weight:800;letter-spacing:-.045em}.answer{font-size:clamp(125px,28vw,285px);line-height:.82;font-weight:900;letter-spacing:-.075em;color:var(--red);margin:28px 0 15px}.answer.yes{color:var(--green)}.sub{font-size:13px;color:var(--muted)}.grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:14px;margin-top:14px}.card{background:rgba(17,24,32,.97);border:1px solid var(--line);border-radius:10px;padding:18px;min-height:120px}.ct{font-size:12px;font-weight:700;color:#98a6b3;margin-bottom:13px}.big{font-size:24px;font-weight:800}.gold{color:var(--gold)}.small{font-size:12px;color:var(--muted);margin-top:7px;line-height:1.45}.pill{display:inline-block;padding:5px 8px;border-radius:5px;font-size:11px;font-weight:800;background:rgba(232,64,87,.13);color:#ff7d90}.pill.yes{background:rgba(52,201,133,.14);color:#66e6aa}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#71808d;font-size:11px;padding:15px 4px}.meta a{color:#8fa8cd;text-decoration:none}footer{text-align:center;padding:18px 16px 28px;color:#86939f;font-size:12px}@media(max-width:700px){main{padding-top:24px}.grid{grid-template-columns:1fr}.avatar{width:50px;height:50px}.qbody{padding:40px 12px}.answer{font-size:clamp(115px,40vw,190px)}}
+</style></head>
+<body><div class="app"><header><div class="bar"><div class="brand">CHALLENGER CHECK</div><div class="live">xyd#zzzzz · BR</div></div></header>
+<main><section class="profile"><div class="identity"><div class="avatar"></div><div><div class="name">xyd<span class="tag">#zzzzz</span></div><div class="region">Brasil · Solo/Duo</div></div></div><button id="refresh">Atualizar</button></section>
+<section class="question"><div class="qhead">STATUS DO OBJETIVO</div><div class="qbody"><h1>todoxy já pegou challenger?</h1><div class="answer" id="answer">...</div><div class="sub" id="answerSub">carregando dados</div></div></section>
+<section class="grid"><div class="card"><div class="ct">RANK ATUAL</div><div class="big" id="rank">—</div><div class="small" id="wl">Solo/Duo · BR</div></div><div class="card"><div class="ct">PONTOS DE LIGA</div><div class="big gold" id="lp">—</div><div class="small">Dados atualizados pelo servidor.</div></div><div class="card"><div class="ct">CHALLENGER</div><div class="pill" id="pill">—</div><div class="small" id="statusText">Carregando.</div></div></section>
+<div class="meta"><span id="updated">Última atualização: —</span><span id="source">Fonte: —</span></div></main><footer>feito com amor e carinho byungchan</footer></div>
 <script>
 const $=id=>document.getElementById(id);let timer;
-const profileUrl='https://www.leagueofgraphs.com/summoner/br/xyd-zzzzz';
 function fmt(n){return Number.isFinite(Number(n))?Number(n).toLocaleString('pt-BR'):'—'}
-function stopLoading(){document.querySelectorAll('.loading').forEach(x=>x.classList.remove('loading'))}
-function parseProfile(text){
-  const plain=text.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
-  const m=plain.match(/\b(Challenger|GrandMaster|Grandmaster|Master|Diamond|Emerald|Platinum|Gold|Silver|Bronze|Iron)\b\s*(?:[IVX]+\s*)?([0-9][0-9.,]*)\s*LP/i);
-  if(!m)throw new Error('rank não encontrado');
-  let tier=m[1];if(/^grandmaster$/i.test(tier))tier='GrandMaster';
-  const lp=Number(m[2].replace(/\./g,'').replace(',','.'));
-  const winsMatch=plain.match(/(?:Wins|Vitórias|Vitorias)\s*:?\s*(\d+)/i);
-  const lossesMatch=plain.match(/(?:Losses|Derrotas)\s*:?\s*(\d+)/i);
-  const wins=winsMatch?Number(winsMatch[1]):null,losses=lossesMatch?Number(lossesMatch[1]):null;
-  const winrate=(wins!=null&&losses!=null&&wins+losses>0)?Math.round(wins/(wins+losses)*100):null;
-  return{tier,lp,wins,losses,winrate};
-}
-async function fetchProfile(){
-  const urls=[
-    'https://api.allorigins.win/raw?disableCache=true&url='+encodeURIComponent(profileUrl),
-    'https://r.jina.ai/http://'+profileUrl.replace(/^https?:\/\//,'')
-  ];
-  let lastErr;
-  for(const url of urls){try{const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return parseProfile(await r.text())}catch(e){lastErr=e}}
-  throw lastErr||new Error('fontes indisponíveis');
-}
-async function load(){
-  clearTimeout(timer);$('refresh').disabled=true;$('refresh').textContent='Atualizando...';
-  try{
-    const rr=await fetchProfile();const challenger=/^challenger$/i.test(rr.tier);stopLoading();
-    $('answer').textContent=challenger?'SIM':'NÃO';$('answer').className='answer'+(challenger?' yes':'');
-    $('answerSub').textContent=challenger?'A conta alcançou Challenger.':'A conta ainda não aparece como Challenger.';
-    $('rank').textContent=rr.tier;$('lp').textContent=fmt(rr.lp)+' LP';
-    $('wl').textContent=(rr.wins!=null&&rr.losses!=null)?`${rr.wins} vitórias · ${rr.losses} derrotas${rr.winrate!=null?' · '+rr.winrate+'% WR':''}`:'Solo/Duo · BR';
-    $('statusPill').textContent=challenger?'SIM':'NÃO';$('statusPill').className='status-pill'+(challenger?' yes':'');
-    $('statusText').textContent=challenger?'Objetivo concluído.':'Objetivo ainda não concluído.';
-    $('updated').textContent='Última consulta: '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
-    $('source').innerHTML='Fonte: <a href="'+profileUrl+'" target="_blank" rel="noreferrer">LeagueOfGraphs</a>';
-  }catch(e){
-    stopLoading();$('answer').textContent='—';$('answer').className='answer error';$('answerSub').textContent='Não foi possível consultar os dados neste momento.';$('rank').textContent='Indisponível';$('lp').textContent='—';$('statusPill').textContent='—';$('statusText').textContent='Tente atualizar novamente.';$('updated').textContent='Última consulta: falhou';$('source').textContent=String(e.message||e);
-  }finally{$('refresh').disabled=false;$('refresh').textContent='Atualizar';timer=setTimeout(load,60000)}
-}
-$('refresh').addEventListener('click',load);load();
-</script>
-</body>
-</html>
+function dateBR(s){if(!s)return '—';try{return new Date(s).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo'})}catch{return s}}
+async function load(){clearTimeout(timer);$('refresh').disabled=true;$('refresh').textContent='Atualizando...';try{const r=await fetch('./rank.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();const c=!!d.challenger||String(d.tier).toLowerCase()==='challenger';$('answer').textContent=c?'SIM':'NÃO';$('answer').className='answer'+(c?' yes':'');$('answerSub').textContent=c?'A conta alcançou Challenger.':'A conta ainda não está em Challenger.';$('rank').textContent=d.tier||'Indisponível';$('lp').textContent=d.lp==null?'—':fmt(d.lp)+' LP';if(d.wins!=null&&d.losses!=null){$('wl').textContent=`${d.wins} vitórias · ${d.losses} derrotas${d.winrate!=null?' · '+d.winrate+'% WR':''}`}else{$('wl').textContent='Solo/Duo · BR'}$('pill').textContent=c?'SIM':'NÃO';$('pill').className='pill'+(c?' yes':'');$('statusText').textContent=c?'Objetivo concluído.':'Objetivo ainda não concluído.';$('updated').textContent='Última atualização: '+dateBR(d.updated_at||d.checked_at);$('source').textContent='Fonte: '+(d.source||'cache público')+(d.status==='stale'?' · último dado válido':'')}catch(e){$('answer').textContent='NÃO';$('answerSub').textContent='Usando o último estado disponível.';$('rank').textContent='Aguardando atualização';$('lp').textContent='—';$('pill').textContent='NÃO';$('statusText').textContent='O cache ainda não foi carregado.';$('source').textContent='Erro: '+e.message}finally{$('refresh').disabled=false;$('refresh').textContent='Atualizar';timer=setTimeout(load,60000)}}
+$('refresh').onclick=load;load();
+</script></body></html>
