@@ -3,12 +3,12 @@
   "region": "BR",
   "queue": "Solo/Duo",
   "tier": "GrandMaster",
-  "lp": 1542,
+  "lp": 2032,
   "challenger": false,
   "wins": null,
   "losses": null,
   "winrate": null,
-  "source": "LeagueOfGraphs",
-  "updated_at": "2026-08-27T21:32:00Z",
-  "status": "seed"
+  "source": "LeagueOfGraphs Yasuo ranking",
+  "updated_at": "2026-08-28T05:49:38.140022+00:00",
+  "status": "ok"
 }
