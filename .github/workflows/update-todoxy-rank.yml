@@ -4,13 +4,22 @@ on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - 'todoxy/fetch_rank.py'
+      - '.github/workflows/update-todoxy-rank.yml'
 
 permissions:
   contents: write
 
+concurrency:
+  group: todoxy-rank
+  cancel-in-progress: true
+
 jobs:
   update-rank:
     runs-on: ubuntu-latest
+    timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
