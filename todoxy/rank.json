@@ -1,14 +1,14 @@
 {
-  "riot_id": "xyd#zzzzz",
+  "riot_id": "todoxy#zuzu",
   "region": "BR",
   "queue": "Solo/Duo",
   "tier": "GrandMaster",
-  "lp": 1766,
+  "lp": 1521,
   "challenger": false,
-  "wins": null,
-  "losses": null,
-  "winrate": null,
-  "source": "LeagueOfGraphs Yasuo ranking",
-  "updated_at": "2026-08-31T21:02:18.443981+00:00",
-  "status": "ok"
+  "wins": 185,
+  "losses": 142,
+  "winrate": 57,
+  "source": "LeagueOfGraphs",
+  "updated_at": "2026-08-31T23:30:00Z",
+  "status": "seed-new-profile"
 }
