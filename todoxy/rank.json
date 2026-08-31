@@ -10,5 +10,7 @@
   "winrate": 57,
   "source": "LeagueOfGraphs",
   "updated_at": "2026-08-31T23:30:00Z",
-  "status": "seed-new-profile"
+  "status": "stale",
+  "error": "LeagueOfGraphs: HTTP Error 403: Forbidden | LeagueOfGraphs PT: HTTP Error 403: Forbidden | OP.GG: rank not found | Jina + LeagueOfGraphs: rank not found | Jina + OP.GG: rank not found",
+  "checked_at": "2026-08-31T23:34:05.418866+00:00"
 }
