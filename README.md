@@ -1,37 +1,58 @@
-<h1 align="center">Oi, me chamo Rodrigo</h1>
-<h3 align="center">
-Estudante de Engenharia de Software
-</h3>
-
-- 🎓 Estudante de **Engenharia de Software - PUCPR**
-- 👨‍💻 Projetos disponíveis no meu [portfólio](https://rodrigobeierstdt.github.io/portfolio/)
-- 📫 Email: **rodrigobeierstdtcosta@gmail.com**
-- 💼 Experiência: Estagiário na área de banco de dados na **Construtora Parati LTDA**
+<h1 align="center">Rodrigo Beierstdt</h1>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rodrigobeierstdt&show_icons=true&theme=great-gatsby" />
+  Desenvolvedor backend em formação, com foco em Java e Python
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rodrigobeierstdt&layout=compact&theme=great-gatsby" />
+  <a href="https://rodrigobeierstdt.github.io/portfolio/">Portfólio</a> •
+  <a href="https://www.linkedin.com/in/rodrigo-beierstdt-7327ab322/">LinkedIn</a> •
+  <a href="mailto:rodrigobeierstdtcosta@gmail.com">E-mail</a>
 </p>
 
+## Sobre mim
 
+- Desenvolvimento backend com **Java** e **Python**
+- Experiência prática com **automação de processos**, planilhas e organização de dados
+- Conhecimentos em **POO, APIs REST, SQL, Git e bancos de dados**
+- Formação acadêmica em Engenharia de Software, com três períodos cursados na **PUCPR**
+- Buscando oportunidades de estágio em desenvolvimento de software
 
+## Projetos em destaque
 
-<h3 align="left">Linguagens e ferramentas:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
-<a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> </p>
+### [Dashboard Financeiro para Obras](https://github.com/RodrigoBeierstdt/DashboardFinancas)
 
-<h3 align="left">Minhas redes:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/rodrigo-beierstdt-7327ab322/" target="_blank">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="30" width="40"/>
-</a>
-<a href="https://discord.com/users/304019502910144515" target="_blank">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" height="30" width="40"/>
-</a>
-<a href="https://instagram.com/rodrigobeier" target="_blank">
-<img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" height="30" width="40"/>
-</a>
+Aplicação web que transforma dados financeiros de obras em indicadores, filtros e gráficos interativos, com leitura de planilhas e exportação de relatórios em PDF.
+
+**Tecnologias:** Python, Streamlit, Pandas, Plotly e FPDF  
+**Demo:** [dashboardrodrigo.streamlit.app](https://dashboardrodrigo.streamlit.app)
+
+### [Steam Data Viewer](https://github.com/RodrigoBeierstdt/ProjetoSteam)
+
+Aplicação backend que consome APIs públicas da Steam e apresenta os jogos mais acessados, número de jogadores, preços e links da loja.
+
+**Tecnologias:** Python, FastAPI, Requests, APIs REST e JSON
+
+### [Sistema de Gerenciamento de Biblioteca](https://github.com/RodrigoBeierstdt/Biblioteca)
+
+Sistema Java executado no terminal para controlar empréstimos e devoluções de livros, desenvolvido para aplicar orientação a objetos.
+
+**Tecnologias:** Java, POO, herança, encapsulamento, polimorfismo e ArrayList
+
+### [Sistema de Login e Cadastro](https://github.com/RodrigoBeierstdt/SistemaCadastroLogin)
+
+Aplicação Java de terminal com cadastro, autenticação e exclusão de contas, criada para praticar validações, estruturas de controle e organização da lógica.
+
+**Tecnologias:** Java
+
+## Tecnologias
+
+<p>
+  <img src="https://skillicons.dev/icons?i=java,python,fastapi,postgres,nodejs,git,github" alt="Java, Python, FastAPI, PostgreSQL, Node.js, Git e GitHub" />
 </p>
+
+## Contato
+
+- [LinkedIn](https://www.linkedin.com/in/rodrigo-beierstdt-7327ab322/)
+- [Portfólio](https://rodrigobeierstdt.github.io/portfolio/)
+- [rodrigobeierstdtcosta@gmail.com](mailto:rodrigobeierstdtcosta@gmail.com)
