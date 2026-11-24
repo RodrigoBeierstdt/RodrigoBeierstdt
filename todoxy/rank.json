@@ -11,6 +11,6 @@
   "source": "LeagueOfGraphs",
   "updated_at": "2026-08-31T23:30:00Z",
   "status": "stale",
-  "error": "LeagueOfGraphs: HTTP Error 403: Forbidden | LeagueOfGraphs PT: HTTP Error 403: Forbidden | OP.GG: rank not found | Jina + LeagueOfGraphs: HTTP Error 401: Unauthorized | Jina + OP.GG: HTTP Error 401: Unauthorized",
-  "checked_at": "2026-11-24T00:42:54.586766+00:00"
+  "error": "LeagueOfGraphs: HTTP Error 403: Forbidden | LeagueOfGraphs PT: HTTP Error 403: Forbidden | OP.GG: rank not found | Jina + LeagueOfGraphs: rank not found | Jina + OP.GG: rank not found",
+  "checked_at": "2026-11-24T10:27:40.055067+00:00"
 }
